@@ -1,0 +1,8 @@
+# Dependencies
+/backend/node_modules
+
+# Database files
+/backend/*.db
+
+# Environment variables (good practice for later)
+.env
