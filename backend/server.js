@@ -8,7 +8,7 @@ const path = require('path');
 // Note: We don't need bcrypt or jwt for the seeder to work, but they are needed for the full app.
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // --- Middleware ---
 app.use(cors());
