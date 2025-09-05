@@ -1,6 +1,6 @@
 // frontend/product.js
 
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://exchange-tdnr.onrender.com/api';
 const productDetailContainer = document.getElementById('product-detail-container');
 
 function getProductId() {
@@ -21,7 +21,7 @@ async function fetchProductDetails(productId) {
 
 function displayProductDetails(product) {
     // --- THIS IS THE KEY CHANGE ---
-    const imageUrl = product.imageUrl ? `/${product.imageUrl}` : '...';
+    const imageUrl = product.imageUrl ? `https://exchange-tdnr.onrender.com/${product.imageUrl}` : '...';
 
     productDetailContainer.innerHTML = `
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">

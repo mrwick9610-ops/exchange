@@ -1,6 +1,6 @@
 // frontend/sell.js
 
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://exchange-tdnr.onrender.com/api';
 const sellForm = document.getElementById('sell-form');
 const formMessage = document.getElementById('form-message');
 

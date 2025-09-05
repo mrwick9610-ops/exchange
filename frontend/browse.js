@@ -1,6 +1,6 @@
 // frontend/browse.js
 
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://exchange-tdnr.onrender.com/api';
 const productsContainer = document.getElementById('products-container');
 
 async function fetchAndDisplayProducts() {
@@ -21,7 +21,7 @@ async function fetchAndDisplayProducts() {
             productCard.className = 'group block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden';
             
             // --- THIS IS THE KEY CHANGE ---
-            const imageUrl = product.imageUrl ? `/${product.imageUrl}` : '...';
+            const imageUrl = product.imageUrl ? `https://exchange-tdnr.onrender.com/${product.imageUrl}` : '...';
 
             productCard.innerHTML = `
                 <div class="relative overflow-hidden h-48">
